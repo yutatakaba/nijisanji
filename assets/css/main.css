@@ -1,0 +1,60 @@
+.container {
+    width: 80%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-right {
+    float: right;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+}
+
+.header-right ul {
+    list-style-type: none;
+    line-height: 33px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+}
+
+.header-right li {
+    display: inline;
+}
+
+.main {
+    padding: 65px 0 100px 0;
+}
+
+.image {
+     text-align: center;
+}
+
+.content-left {
+    width: 10%;
+    display: inline-block;
+}
+
+.content-center {
+    width: 60%;
+    display: inline-block;
+}
+
+.content-right {
+    width: 20%;
+    padding-right: 40px;
+    float: right;
+}
