@@ -18,3 +18,4 @@ $(function () {
   // searchWordの実行
   $('#search-text').on('input', searchWord);
 });
+
