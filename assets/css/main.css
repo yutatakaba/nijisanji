@@ -149,25 +149,26 @@ header {
 }
 
 .target-area li {
-    padding-bottom: 50px;
+    margin-right: 30px;
+    margin-left: -40px;
+    background-color: #F2F2F2;
 }
 
 .target-area .hidden {
     display: none
 }
 
-.song-list {
-    height: 150px;
-}
-
 .song-list img {
-    width: 30%;
+    width: 40%;
+    padding: 10px 10px 10px 10px;
+    vertical-align: middle;
 }
 
 .song-name {
     display: inline-block;
-    padding: 0 40px;
-    vertical-align: top;
+    height: 160px;
+    padding: 10px 10px 10px 10px;
+    vertical-align: middle;
 }
 
 .content-right {
@@ -277,18 +278,20 @@ header {
     }
 
     .target-area li {
-        padding-bottom: 80%;
+        margin-right: 0;
+        margin-left: 0;
+        background-color: #F2F2F2;
     }
 
     .song-list img {
-        width: 100%;
+        width: 90%;
+        padding: 15px 15px 15px 15px;
     }
 
     .song-name {
         display: table;
         vertical-align: top;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 15px 15px 5px 15px;
     }
 
     .content-right {
