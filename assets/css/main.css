@@ -53,7 +53,7 @@ header {
 }
 
 .main {
-    padding: 65px 0 100px 0;
+    padding: 57px 0 100px 0;
 }
 
 .image {
@@ -102,6 +102,57 @@ header {
 .content-center {
     width: 60%;
     display: inline-block;
+    position: absolute;
+}
+
+.content-center ul {
+    list-style-type: none;
+}
+
+.search-area input[type="text"] {
+    padding: 5px 5px 3px;
+    font-size: 16px;
+    border: 1px solid #D6D6D6;
+}
+
+.search-area input[type="text"]:focus {
+    background: #F9F9F9;
+}
+
+.search-result {
+    margin-top: 20px;
+}
+.hit-num__text span {
+    font-weight: bold;
+}
+#search-result__list {
+    margin-top: 15px;
+}
+#search-result__list span {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 5px;
+    background: #F2F2F2;
+}
+.target-area {
+    margin-top: 50px;
+}
+.target-area .hidden {
+    display: none
+}
+
+.song-list {
+    height: 150px;
+}
+
+.song-list img {
+    width: 30%;
+
+}
+.song-name {
+    display: inline-block;
+    padding: 0 40px;
+    vertical-align: top;
 }
 
 .content-right {
