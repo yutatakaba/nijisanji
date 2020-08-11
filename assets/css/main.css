@@ -1,5 +1,5 @@
 .container {
-    width: 80%;
+    width: 90%;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -7,7 +7,7 @@
 header {
     height: 65px;
     width: 100%;
-    background-color: rgba(34, 49, 52, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     position: fixed;
     top: 0;
     z-index: 10;
@@ -15,11 +15,28 @@ header {
 
 .header-left {
     float: left;
+    height: 65px;
+    width: 300px;
+}
+
+.header-left img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.header-left p {
+    font-size: 20px;
+    color: #00AA00;
+    display: inline-block;
+    position: absolute;
+    top: auto;
 }
 
 .header-right {
     float: right;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.9);
     transition: all 0.5s;
 }
 
