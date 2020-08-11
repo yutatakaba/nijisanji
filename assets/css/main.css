@@ -36,7 +36,6 @@ header {
 
 .header-right {
     float: right;
-    background-color: rgba(0, 0, 0, 0.9);
     transition: all 0.5s;
 }
 
@@ -50,10 +49,23 @@ header {
 
 .header-right li {
     display: inline;
+    padding: 30px 10px 25px 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.header-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-right a:hover {
+    color: blue;
+    text-decoration: none;
 }
 
 .main {
     padding: 57px 0 100px 0;
+    height: 300px;
 }
 
 .image {
