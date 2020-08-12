@@ -61,6 +61,10 @@ header {
     text-decoration: none;
 }
 
+.responsive-menu {
+    display: none;
+}
+
 .main {
     padding: 57px 0 100px 0;
     height: 300px;
@@ -189,7 +193,7 @@ header {
     }
 
     header {
-        height: 65px;
+        height: 55px;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.9);
         position: fixed;
@@ -199,7 +203,7 @@ header {
 
     .header-left {
         float: left;
-        height: 65px;
+        height: 55px;
         width: 100px;
     }
 
@@ -219,18 +223,84 @@ header {
     }
 
     .header-right ul {
-        list-style-type: none;
-        line-height: 33px;
         display: none;
     }
 
-    .header-right li {
-        display: inline;
+    .responsive-menu {
+        display: block;
+        float: right;
+        padding-top: 10px;
     }
 
-    .header-right a {
-        color: black;
+    .hamberger {
+        cursor: pointer;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        margin: 2px;
+    }
+    .hamberger span {
+        left: 0;
+        width: 100%;
+        height: 4px;
+        position: relative;
+        display: block;
+        background-color: #00AA00;
+        border-radius: 2px;
+        transform: rotate(0deg);
+        transition: .4s ease-in-out;
+    }
+    .hamberger span:nth-child(1) {
+        top: 0;
+    }
+    .hamberger span:nth-child(2) {
+        top: 8px;
+    }
+    .hamberger span:nth-child(3) {
+        top: 16px;
+    }
+    .hamberger.open span:nth-child(1) {
+        transform: translateY(12px) rotate(135deg);
+    }
+    .hamberger.open span:nth-child(2) {
+        transform: translateX(200%);
+    }
+    .hamberger.open span:nth-child(3) {
+        transform: translateY(-12px) rotate(-135deg);
+    }
+
+    .responsive-menu ul {
+        list-style: none;
+    }
+
+    .menu-list {
+        cursor: pointer;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.9);
+        right: -200%;
+        width: 100%;
+        height: auto;
+        top: 39px
+    }
+
+    .menu-contents {
+        position: relative;
+        width: 95%;
+    }
+
+    .menu-contents {
+        height: 40px;
+    }
+
+    .menu-contents a {
+        color: #00AA00;
+        vertical-align: center;
         text-decoration: none;
+        padding-left: 30px;
+    }
+
+    .main {
+        padding: 47px 0 100px 0;
     }
 
     .content-left {

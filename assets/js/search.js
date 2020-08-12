@@ -19,3 +19,16 @@ $(function () {
   $('#search-text').on('input', searchWord);
 });
 
+$(function(){
+    function slideMenu() {
+        let activeState = $(".menu-list").hasClass("active");
+        $(".menu-list").animate({right: activeState ? "0%" : "-120%"}, 400);
+    }
+
+    $(".hamberger").click(function(event){
+        event.stopPropagation();
+        $(".hamberger").toggleClass("open");
+        $(".menu-list").toggleClass("active");
+        slideMenu();
+    });
+});
