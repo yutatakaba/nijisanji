@@ -230,6 +230,7 @@ header {
         display: block;
         float: right;
         padding-top: 10px;
+        padding-right: 10px;
     }
 
     .hamberger {
@@ -271,6 +272,7 @@ header {
 
     .responsive-menu ul {
         list-style: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
 
     .menu-list {
@@ -286,10 +288,11 @@ header {
     .menu-contents {
         position: relative;
         width: 95%;
+        height: 40px;
     }
 
-    .menu-contents {
-        height: 40px;
+    .menu-contents li {
+        display:inline-block;
     }
 
     .menu-contents a {
@@ -297,6 +300,10 @@ header {
         vertical-align: center;
         text-decoration: none;
         padding-left: 30px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
 
     .main {
