@@ -44,11 +44,19 @@ header {
     line-height: 33px;
     padding: 0 25px;
     display: block;
+    height: 30px;
+}
+
+.menu-icon {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    position: absolute;
 }
 
 .header-right li {
     display: inline;
-    padding: 30px 10px 25px 10px;
+    padding: 10px 20px 10px 10px;
 }
 
 .header-right a {
@@ -59,6 +67,11 @@ header {
 .header-right a:hover {
     color: blue;
     text-decoration: none;
+}
+
+.header-right p {
+    display: inline-block;
+    position: relative;
 }
 
 .responsive-menu {
