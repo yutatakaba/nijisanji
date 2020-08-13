@@ -106,13 +106,26 @@
                   <form>
                     <input type="text" id="search-text" placeholder="検索ワードを入力">
                   </form>
+                  <form>
+                  	<div class="search-box">
+                  		<span class="search-box_label">ジャンル:<br></span>
+                  		<label><input type="checkbox" name="genre" value="">ALL</label>
+                  		<label><input type="checkbox" name="genre" value="初配信">初配信</label>
+                  		<label><input type="checkbox" name="genre" value="雑談">雑談</label>
+                  		<label><input type="checkbox" name="genre" value="マシュマロ">マシュマロ</label>
+                  		<label><input type="checkbox" name="genre" value="企画">企画</label>
+                  		<label><input type="checkbox" name="genre" value="コラボ">コラボ</label>
+                  		<label><input type="checkbox" name="genre" value="凸待ち">凸待ち</label>
+                  		<label><input type="checkbox" name="genre" value="記念枠">記念枠</label>
+                  	</div>
+                  </form>
                   <div class="search-result">
                     <div class="search-result__hit-num"></div>
                     <div id="search-result__list"></div>
                   </div>
                 </div>
                 <ul class="target-area">
-                	<li>
+                	<li class="list_item" data-genre='["雑談", "マシュマロ"]'>
                     	<div class="song-list">
                         	<img src="http://img.youtube.com/vi/uXkgzWidVno/maxresdefault.jpg">
                             <div class="song-name">
@@ -129,7 +142,7 @@
                          	</div>
                         </div>
                     </li>
-                	<li>
+                	<li class="list_item" data-genre='["雑談", "初配信", "記念枠"]'>
 					  <div class="song-list">
 						  <img src="http://img.youtube.com/vi/S4GZ-5xaMAg/maxresdefault.jpg">
 						  <div class="song-name">

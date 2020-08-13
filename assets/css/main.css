@@ -132,6 +132,23 @@ header {
     position: absolute;
 }
 
+.search-box {
+    padding-top: 20px;
+}
+
+.search-box_label {
+    display: block;
+    font-weight: bold;
+}
+
+label {
+    white-space: nowrap;
+}
+
+.is-hide {
+    display: none;
+}
+
 .content-center ul {
     list-style-type: none;
 }

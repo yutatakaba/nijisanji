@@ -106,13 +106,32 @@
                   <form>
                     <input type="text" id="search-text" placeholder="検索ワードを入力">
                   </form>
+				  <form>
+                  	<div class="search-box">
+                  		<span class="search-box_label">ジャンル:<br></span>
+                  		<label><input type="checkbox" name="genre" value="">ALL</label>
+                  		<label><input type="checkbox" name="genre" value="オリジナル曲">オリジナル曲</label>
+                  		<label><input type="checkbox" name="genre" value="JPOP">JPOP</label>
+                  		<label><input type="checkbox" name="genre" value="アニソン">アニソン</label>
+                  		<label><input type="checkbox" name="genre" value="ボカロ">ボカロ</label>
+                  	</div>
+                  	<div class="search-box">
+                  		<span class="search-box_label">種類:<br></span>
+                  		<label><input type="checkbox" name="kind" value="">ALL</label>
+                  		<label><input type="checkbox" name="kind" value="オリジナル曲">オリジナル曲</label>
+                  		<label><input type="checkbox" name="kind" value="歌ってみた">歌ってみた</label>
+                  		<label><input type="checkbox" name="kind" value="歌枠(ver. full)">歌枠(ver. full)</label>
+                  		<label><input type="checkbox" name="kind" value="歌枠(ver. short)">歌枠(ver. short)</label>
+                  		<label><input type="checkbox" name="kind" value="歌枠(ver. アカペラ)">歌枠(ver. アカペラ)</label>
+                  	</div>
+                  </form>
                   <div class="search-result">
                     <div class="search-result__hit-num"></div>
                     <div id="search-result__list"></div>
                   </div>
                 </div>
                 <ul class="target-area">
-                  <li>
+                  <li class="list_item" data-genre='["オリジナル曲"]' data-kind='["オリジナル曲"]'>
                   	<div class="song-list">
                   		<img src="http://img.youtube.com/vi/S4GZ-5xaMAg/maxresdefault.jpg">
                   		<div class="song-name">

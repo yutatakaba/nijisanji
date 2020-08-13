@@ -106,13 +106,45 @@
                   <form>
                     <input type="text" id="search-text" placeholder="検索ワードを入力">
                   </form>
+                  <form>
+                  	<div class="search-box">
+                  		<span class="search-box_label">ジャンル:<br></span>
+                  		<label><input type="checkbox" name="genre" value="">ALL</label>
+                  		<label><input type="checkbox" name="genre" value="アクション">アクション</label>
+                  		<label><input type="checkbox" name="genre" value="RPG">RPG</label>
+                  		<label><input type="checkbox" name="genre" value="FPS">FPS</label>
+                  		<label><input type="checkbox" name="genre" value="ソーシャルゲーム">ソーシャルゲーム</label>
+                  		<label><input type="checkbox" name="genre" value="パズルゲーム">パズルゲーム</label>
+                  		<label><input type="checkbox" name="genre" value="テーブルゲーム">テーブルゲーム</label>
+                  	</div>
+                  	<div class="search-box">
+                  		<span class="search-box_label">ハード:<br></span>
+                  		<label><input type="checkbox" name="hard" value="">ALL</label>
+                  		<label><input type="checkbox" name="hard" value="Nintendo 64">Nintendo 64</label>
+                  		<label><input type="checkbox" name="hard" value="ゲームキューブ">ゲームキューブ</label>
+                  		<label><input type="checkbox" name="hard" value="GBA">GBA</label>
+                  		<label><input type="checkbox" name="hard" value="DS">DS</label>
+                  		<label><input type="checkbox" name="hard" value="3DS">3DS</label>
+                  		<label><input type="checkbox" name="hard" value="Nintendo Switch">Nintendo Switch</label>
+                  		<label><input type="checkbox" name="hard" value="Steam">Steam</label>
+                  		<label><input type="checkbox" name="hard" value="PSP">PSP</label>
+                  		<label><input type="checkbox" name="hard" value="PS3">PS3</label>
+                  		<label><input type="checkbox" name="hard" value="PS4">PS4</label>
+                  		<label><input type="checkbox" name="hard" value="スマートフォン">スマートフォン</label>
+                  	</div>
+                  	<div class="search-box">
+                      <span class="search-box_label">シリーズ:<br></span>
+                      <label><input type="checkbox" name="series" value="">ALL</label>
+                      <label><input type="checkbox" name="series" value="とっとこハム太郎3">とっとこハム太郎3</label>
+                    </div>
+                  </form>
                   <div class="search-result">
                     <div class="search-result__hit-num"></div>
                     <div id="search-result__list"></div>
                   </div>
                 </div>
                 <ul class="target-area">
-                  <li>
+                  <li class="list_item" data-genre='["アクション"]' data-hard='["GBA"]' data-series='["とっとこハム太郎3"]'>
                   	<div class="song-list">
                     	<img src="http://img.youtube.com/vi/xeRYv_Z0MIU/maxresdefault.jpg">
                         <div class="song-name">
