@@ -176,6 +176,7 @@ header {
 }
 
 .song-list img {
+    display: inline-block;
     width: 40%;
     padding: 10px 10px 10px 10px;
     vertical-align: middle;
@@ -183,7 +184,7 @@ header {
 
 .song-name {
     display: inline-block;
-    height: 160px;
+    height: 170px;
     padding: 10px 10px 10px 10px;
     vertical-align: middle;
 }
@@ -207,7 +208,7 @@ header {
 
     header {
         height: 55px;
-        width: 100%;
+        width: 98%;
         background-color: rgba(255, 255, 255, 0.9);
         position: fixed;
         top: 0;
@@ -324,31 +325,37 @@ header {
     }
 
     .content-left {
-        width: 100%;
-        display: inline;
+        width: 40%;
+        margin-left: 3%;
+        display: inline-block;
+        position: absolute;
+        margin-top: auto;
     }
 
     .youtube {
-        width: 50%;
-        margin-right: auto;
-        margin-left: auto;
+        width: 100%;
     }
 
     .responsive-twitter {
-        display: inline;
+        width: 40%;
+        padding-left: 12%;
+        position: absolute;
+        left: 40%;
+        display: inline-block;
     }
 
     .twitter {
-        width: 90%;
-        height: 40%;
-        margin-right: auto;
-        margin-left: auto;
-        padding-bottom: 90%;
+        display: block;
+        padding-top: 10%;
+        width: 100%;
+        margin: auto;
     }
 
     .content-center {
         width: 100%;
-        display: inline;
+        display: block;
+        position: absolute;
+        top: 50%;
         padding-bottom: 10px;
     }
 
@@ -375,13 +382,13 @@ header {
 
     .song-list img {
         width: 90%;
-        padding: 15px 15px 15px 15px;
+        padding: 15px 0 15px 15px;
     }
 
     .song-name {
         display: table;
         vertical-align: top;
-        padding: 15px 15px 5px 15px;
+        padding: 15px 0 5px 15px;
     }
 
     .content-right {
