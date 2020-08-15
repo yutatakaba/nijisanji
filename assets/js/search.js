@@ -115,3 +115,20 @@ function array_match_check(arr1, arr2) {
     }
     return arrCheck;
 }
+
+var target = document.getElementById("content-right-id");
+var client_h = document.getElementById('image').clientHeight;
+var obj_t_pos = $('#image').offset().top;
+var _y = client_h
+function scrollEffect(){
+    var scroll = $(window).scrollTop();
+    console.log(scroll)
+    if (scroll > _y) {
+        target.className="content-right-fixed";
+    } else {
+        target.className="content-right";
+    }
+}
+$(window).scroll(function(){
+  scrollEffect();
+});
