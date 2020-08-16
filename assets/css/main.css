@@ -86,47 +86,9 @@ header {
      text-align: center;
 }
 
-.content-left {
-    width: 15%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.youtube ul {
-    list-style-type: none;
-    display: table;
-    padding-left: 0;
-}
-
-.youtube li {
-    display: inline;
-    vertical-align: middle;
-}
-
-.youtube img {
-    border: 3px solid #000000;
-    border-radius: 50%;
-    width:  50px;
-    height: 50px;
-}
-
-.button {
-    font-size:12px;
-    color:#FFFFFF;
-    text-align:center;
-    padding: 20px 15px 20px 15px;
-    background: #ff0000;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.button:hover {
-    cursor : pointer;
-    background: #ff4444;
-}
-
 .content-center {
-    width: 60%;
+    width: 75%;
+    padding-left: 30px;
     display: inline-block;
     position: absolute;
 }
@@ -179,12 +141,12 @@ label {
 }
 .target-area {
     margin-top: 50px;
+    background-color: #F2F2F2;
 }
 
 .target-area li {
     margin-right: 30px;
-    margin-left: -40px;
-    background-color: #F2F2F2;
+    margin-left: -20px;
 }
 
 .target-area .hidden {
@@ -193,15 +155,16 @@ label {
 
 .song-list img {
     display: inline-block;
-    width: 40%;
-    padding: 10px 10px 10px 10px;
+    width: 45%;
+    padding: 30px 20px 20px 20px;
     vertical-align: middle;
 }
 
 .song-name {
+    font-size: 18px;
     display: inline-block;
-    height: 170px;
-    padding: 10px 10px 10px 10px;
+    height: auto;
+    padding: 10px 10px 10px 20px;
     vertical-align: middle;
 }
 
@@ -233,6 +196,40 @@ label {
     right: 0;
     top: 65px;
 }
+
+.youtube ul {
+    list-style-type: none;
+    display: table;
+    padding-left: 0;
+}
+
+.youtube li {
+    display: inline;
+    vertical-align: middle;
+}
+
+.youtube img {
+    border: 3px solid #000000;
+    border-radius: 50%;
+    width:  50px;
+    height: 50px;
+}
+
+.button {
+    font-size:12px;
+    color:#FFFFFF;
+    text-align:center;
+    padding: 20px 15px 20px 15px;
+    background: #ff0000;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    cursor : pointer;
+    background: #ff4444;
+}
+
 
 .responsive-twitter {
     display: none;
@@ -363,38 +360,16 @@ label {
         padding: 47px 0 100px 0;
     }
 
-    .content-left {
-        width: 40%;
-        margin-left: 3%;
-        display: inline-block;
-        position: absolute;
-        margin-top: auto;
-    }
-
-    .youtube {
-        width: 100%;
-    }
-
-    .responsive-twitter {
-        width: 40%;
-        padding-left: 12%;
-        position: absolute;
-        left: 40%;
-        display: inline-block;
-    }
-
-    .twitter {
-        display: block;
-        padding-top: 10%;
-        width: 100%;
-        margin: auto;
+    .search-box {
+        font-size: 13px;
+        padding-top: 20px;
     }
 
     .content-center {
         width: 100%;
         display: block;
         position: absolute;
-        top: 50%;
+        padding-left: 0;
         padding-bottom: 10px;
     }
 
@@ -428,9 +403,14 @@ label {
         display: table;
         vertical-align: top;
         padding: 15px 0 5px 15px;
+        font-size: 13px;
     }
 
     .content-right {
+        display: none;
+    }
+
+    .content-right-fixed {
         display: none;
     }
 }
