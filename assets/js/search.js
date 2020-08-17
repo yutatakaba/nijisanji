@@ -132,3 +132,12 @@ function scrollEffect(){
 $(window).scroll(function(){
   scrollEffect();
 });
+
+var moreNum = 4;
+$('.target-area li:nth-child(n + ' + (moreNum + 1) + ')').addClass('is-hidden');
+$('.more').on('click', function() {
+  $('.target-area li.is-hidden').slice(0, moreNum).removeClass('is-hidden');
+  if ($('.target-area li.is-hidden').length == 0) {
+    $('.more').fadeOut();
+  }
+});
